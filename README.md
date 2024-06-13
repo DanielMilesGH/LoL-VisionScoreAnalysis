@@ -18,6 +18,7 @@ At the end, as an experiment, we see how close we can get to predicting Vision S
 There are 148992 rows in the dataframe, where 124160 of those rows correspond to individual players, and 24832 of those rows correspond to teams. 
 
 Here are some columns we will be focusing on:
+
 |Column                |Description|
 |---                |---        |
 |`'gameid'`                |A unique identifier for individual matches. Useful for full match statistics, rather than one side.|
@@ -57,6 +58,7 @@ I added some quartiles of columns, such as 'wpmqcut' and 'gamelengthqcut', repre
 Lastly, I added visionscorediff to calculate the WIN-LOSS visionscore, and the visionscorerelativediff column to calculate self - other team. 
 
 Teams DF: 
+
 |    | league | result | teamkills | dragons | gamelength | teamdeaths | ckpm  | elders | firstbaron | firstherald | firstdragon | barons | towers | dpm     | wardsplaced | wpm   | wardskilled | wcpm  | controlwardsbought | earnedgold | minionkills | wpmqcut          | visionscoreqcut     | gamelengthqcut      | visionscorediff |
 |----|--------|--------|-----------|---------|------------|------------|-------|--------|------------|-------------|-------------|--------|--------|---------|--------------|-------|--------------|-------|--------------------|-------------|--------------|-----------------|---------------------|---------------------|-----------------|
 | 35 | 0      | False  | 6         | 1       | 1365       | 13         | 0.8352| 0      | False      | True        | False       | 0      | 3      | 1337.01| 64           | 2.8132| 34           | 1.4945| 26                 | 23237       | 680          | (2.662, 3.008]  | (39.999, 177.0]     | (920.999, 1656.0]   | 7               |
